@@ -1,0 +1,479 @@
+/* Homepage *
+
+/* Hero Section */
+.hero {
+    background-image: url(../images/slider-bg-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.hero > .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.hero__content h1 span,
+.hero__content h2 span,
+.hero__content h3 span {
+    display: inline-block;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    color: #ffffff;
+
+    box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.hero__content h1 span.hero__title {
+    background-color: #ff2a6b;
+    font-size: 40px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .hero__content h1 span.hero__title {
+        font-size: 72px;
+    }
+}
+
+.hero__content h2 span.hero__sub-title {
+    position: relative;
+    z-index: 1;
+    background-color: #fdc856;
+    font-size: 30px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .hero__content h2 span.hero__sub-title {
+        font-size: 48px;
+    }
+}
+
+.hero__content h3 span.hero__sub-title {
+    background-color: #bdde64;
+    font-size: 20px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .hero__content h3 span.hero__sub-title {
+        font-size: 36px;
+    }
+}
+
+.hero__content > h1 {
+    animation: zoomIn 0.75s ease-out both;
+}
+
+.hero__content > h2 {
+    animation: animate 0.75s ease-out 0.5s both;
+}
+
+.hero__content > h3 {
+    animation: animate 0.75s ease-out 1s both;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+
+    1% {
+        opacity: 0;
+        transform: rotate(5deg) scale(0.1, 0.1);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(5deg) scale(1, 1);
+    }
+}
+
+@keyframes animate {
+    from {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+/* Recipes-rating section start */
+/* Top rated recipes column */
+.recipes-rating {
+    background-color: #f4f7fb;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+h2.recipes-rating__title {
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #474747;
+}
+
+h2.recipes-rating__title::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    width: 50px;
+    height: 6px;
+    margin-bottom: 10px;
+    background-color: #ff2a6b;
+}
+
+h2.recipes-rating__title::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50px;
+
+    width: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #ff2a6b transparent transparent #ff2a6b;
+}
+
+ul.recipes-rating__top {
+}
+
+ul.recipes-rating__top > li,
+ul.recipes-rating__liked > li {
+    padding-bottom: 15px;
+}
+
+ul.recipes-rating__top h3,
+ul.recipes-rating__liked h3 {
+    color: #474747;
+    font-weight: 500;
+}
+.recipes-rating__list-items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+.recipes-rating__image {
+}
+
+.recipes-rating__image img {
+    width: 80px;
+    height: 80px;
+}
+.recipes-rating__info {
+    padding-left: 15px;
+}
+.recipes-rating__date {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ff2a6b;
+}
+.recipes-rating__name {
+    font-size: 16px;
+}
+
+ul.recipes-rating__stars {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 10px;
+}
+
+ul.recipes-rating__stars > li {
+    padding-right: 3px;
+}
+
+.recipes-rating__stars i {
+    font-size: 11px;
+    color: #fbb710;
+}
+
+.recipes-rating__stars > li:last-child i {
+    color: #e0e3e4;
+}
+
+/* .recipes-rating__stars i:last-child {
+    color: #e0e3e4;
+} */
+
+/* Most liked recipes */
+ul.recipes-rating__liked {
+}
+
+/* Blog recipes rating */
+.recipes-rating__blog {
+    position: relative;
+    margin-top: 30px;
+    background-color: #fff;
+    box-shadow: 0 17px 29px rgba(0, 0, 0, 0.15);
+}
+.recipes-rating__blog-image {
+    position: relative;
+}
+
+.recipes-rating__blog-image::before {
+    content: "May 04, 2018";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 50px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ff2a6b;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.recipes-rating__blog-image::after {
+    content: "";
+    position: absolute;
+    left: 140px;
+    top: 0;
+
+    width: 0;
+    border-width: 25px 15px;
+    border-style: solid;
+    border-color: #ff2a6b transparent transparent #ff2a6b;
+}
+
+.recipes-rating__blog-image img {
+    width: 100%;
+}
+.recipes-rating__content {
+    padding: 40px 40px;
+}
+.recipes-rating__heading {
+    font-weight: 500;
+}
+.recipes-rating__author {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ff2a6b;
+}
+.recipes-rating__description {
+    font-size: 14px;
+    line-height: 2;
+    color: #838383;
+}
+.recipes-rating__comments {
+    padding-top: 20px;
+    font-size: 12px;
+    color: #474747;
+}
+.recipes-rating__icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ff2a6b;
+    width: 40px;
+    height: 40px;
+}
+
+.recipes-rating__icon i {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Testimonials section start */
+.testimonials {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fdc856;
+}
+
+.testimonials .container {
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .testimonials .container {
+        max-width: 480px;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .testimonials .container {
+        max-width: 1150px;
+    }
+}
+
+.testimonials .row {
+    /* flex-flow: row nowrap; */
+}
+
+.testimonials .col {
+    width: 100%;
+    padding: 15px;
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .testimonials .col {
+        width: 50%;
+    }
+}
+
+.testimonials__bg {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .testimonials__bg {
+        flex-flow: row nowrap;
+        padding: 0;
+    }
+}
+.testimonials__image {
+    position: relative;
+    width: 50%;
+}
+
+.testimonials__image::before {
+    content: "May 04, 2018";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 35px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-color: #ff2a6b;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.testimonials__image::after {
+    content: "";
+    position: absolute;
+    left: 90px;
+    top: 0;
+
+    width: 0;
+    border-width: 18px 10px;
+    border-style: solid;
+    border-color: #ff2a6b transparent transparent #ff2a6b;
+}
+
+.rectangle--smallest__content {
+}
+
+.testimonials__image img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.testimonials__content {
+    padding-top: 20px;
+    padding-left: 30px;
+    text-align: center;
+    /* width: 70%; */
+}
+
+@media only screen and (min-width: 768px) {
+    .testimonials__image {
+        width: 33.333333%;
+    }
+    .testimonials__content {
+        width: 66.666667%;
+        text-align: left;
+    }
+}
+
+.testimonials__date {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ff2a6b;
+}
+.testimonials__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #474747;
+}
+ul.testimonials__rating {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    ul.testimonials__rating {
+        justify-content: flex-start;
+    }
+}
+
+ul.testimonials__rating > li {
+    padding-right: 3px;
+}
+
+ul.testimonials__rating i {
+    font-size: 11px;
+    color: #fbb710;
+}
+
+ul.testimonials__rating > li:last-child i {
+    color: #e0e3e4;
+}
+.testimonials__author {
+    /* display: flex;
+    flex-flow: row nowrap;
+    justify-content: center; */
+}
+
+@media only screen and (min-width: 768px) {
+    .testimonials__author {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
+.testimonials__avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+    .testimonials__avatar {
+        width: 10%;
+    }
+}
+.testimonials__name {
+    align-self: center;
+    padding-left: 15px;
+    /* width: 90%; */
+    font-size: 14px;
+    color: #838383;
+}

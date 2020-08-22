@@ -1,0 +1,180 @@
+/* SECTION FOOTER */
+footer {
+    background-image: url(../images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+}
+.app-footer {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .app-footer {
+        text-align: left;
+    }
+}
+
+/* SOCIAL-LIST */
+.app-footer__social-list {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .app-footer__social-list {
+        justify-content: flex-start;
+    }
+}
+
+.app-footer__social-list > li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .app-footer__social-list > li {
+        padding-right: 30px;
+        padding-left: 0;
+    }
+}
+
+.app-footer__social-list > li > a {
+    color: #000;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+    .app-footer__social-list > li > a {
+        color: #b8b8b8;
+    }
+}
+.app-footer__social-list > li > a:hover {
+    color: #ff2a6b;
+}
+
+/* MENU */
+.app-footer__right {
+    margin-top: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .app-footer__right {
+        padding-left: 0;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .app-footer__right {
+        text-align: right;
+    }
+}
+.app-footer__menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .app-footer__menu {
+        justify-content: flex-start;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .app-footer__menu {
+        justify-content: flex-end;
+    }
+}
+
+.app-footer__menu li {
+    padding: 0 15px 10px 15px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .app-footer__menu > li {
+        padding-left: 0;
+        padding-right: 30px;
+    }
+}
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .app-footer__menu li {
+        padding: 0 0 10px 30px;
+    }
+}
+.app-footer__menu li a {
+    text-decoration: none;
+    color: #474747;
+    font-weight: 500;
+    font-size: 15px;
+}
+.app-footer__menu li a:hover {
+    color: #ff2a6b;
+}
+.app-footer__menu li .active {
+    color: #ff2a6b;
+    font-weight: 700;
+}
+.app-footer__right p {
+    color: #838383;
+    font-size: 14px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 992px) {
+    .app-footer__right p {
+        font-size: 13px;
+    }
+}
+
+.app-footer__right p a {
+    color: #007bff;
+    text-decoration: none;
+}
+.app-footer__right p a:hover {
+    color: #0056b3;
+}
+
+/* Scroll-to-top button */
+.scroll-to-top__button {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    display: none;
+
+    background-color: #ff2a6b;
+    color: #fff;
+
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.scroll-to-top__button:hover {
+    opacity: 0.7;
+}

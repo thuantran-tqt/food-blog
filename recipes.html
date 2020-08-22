@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes List - Food Blog</title>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/4a9d18e4fd.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- CSS Stylesheets  -->
+    <link rel="stylesheet" href="css/recipes.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<body>
+    <!-- Header section start -->
+    <header>
+        <!-- Top-bar section start -->
+        <section class="top-bar" id="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <ul class="top-bar__social-list">
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="top-bar__links">
+                            <a href="#">Register</a>
+                            <span>/</span>
+                            <a href="#">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Top-bar section end -->
+
+        <!-- Navigation section start -->
+        <nav class="top-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-lg-2 col-md-2">
+                        <a href="index.html" class="top-nav___link-logo">
+                            <img class="top-nav__logo" src="./images/logo.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-8 col-md-9">
+                        <ul class="top-nav__menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#" class="active">Recipes</a></li>
+                            <li><a href="recipe-detail.html">Recipe Detail</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-2 col-lg-2 col-md-1">
+                        <div class="top-nav__search">
+                            <button>
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="top-nav__toggle" id="showMenu">
+                            <div class="top-nav__toggle-bars">
+                                <div class="top-nav__toggle-bar" id="rotateBar-1"></div>
+                                <div class="top-nav__toggle-bar" id="hideBar"></div>
+                                <div class="top-nav__toggle-bar" id="rotateBar-2"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="top-nav__menu-toggle" id="toggleMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#" class="active">Recipes</a></li>
+                        <li><a href="recipe-detail.html">Recipe Detail</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation section end -->
+    </header>
+    <!-- Header section end -->
+
+    <main>
+        <!-- Hero section start -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Recipes</h1>
+            </div>
+        </section>
+        <!-- Hero section end -->
+
+        <!-- Recipes list section start -->
+        <section class="recipes-list">
+            <div class="container">
+                <div class="recipes-list__heading">
+                    <h2 class="recipes-list__title">Latest recipes</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="recipes-list__item">
+                            <img src="images/recipes/1.jpg" alt="">
+                            <div class="recipes-list__info-background">
+                                <div class="recipes-list__info">
+                                    <h3>Traditional Pizza</h3>
+                                    <div class="recipes-list__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="recipes-list__item">
+                            <img src="images/recipes/2.jpg" alt="">
+                            <div class="recipes-list__info-background">
+                                <div class="recipes-list__info">
+                                    <h3>Traditional Pizza</h3>
+                                    <div class="recipes-list__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="recipes-list__item">
+                            <img src="images/recipes/3.jpg" alt="">
+                            <div class="recipes-list__info-background">
+                                <div class="recipes-list__info">
+                                    <h3>Traditional Pizza</h3>
+                                    <div class="recipes-list__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="recipes-list__item">
+                            <img src="images/recipes/4.jpg" alt="">
+                            <div class="recipes-list__info-background">
+                                <div class="recipes-list__info">
+                                    <h3>Traditional Pizza</h3>
+                                    <div class="recipes-list__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="recipes-list__item">
+                            <img src="images/recipes/5.jpg" alt="">
+                            <div class="recipes-list__info-background">
+                                <div class="recipes-list__info">
+                                    <h3>Traditional Pizza</h3>
+                                    <div class="recipes-list__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="recipes-list__item">
+                            <img src="images/recipes/6.jpg" alt="">
+                            <div class="recipes-list__info-background">
+                                <div class="recipes-list__info">
+                                    <h3>Traditional Pizza</h3>
+                                    <div class="recipes-list__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="recipes-list__item">
+                            <img src="images/recipes/7.jpg" alt="">
+                            <div class="recipes-list__info-background">
+                                <div class="recipes-list__info">
+                                    <h3>Traditional Pizza</h3>
+                                    <div class="recipes-list__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="recipes-list__item">
+                            <img src="images/recipes/8.jpg" alt="">
+                            <div class="recipes-list__info-background">
+                                <div class="recipes-list__info">
+                                    <h3>Traditional Pizza</h3>
+                                    <div class="recipes-list__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="recipes-list__item">
+                            <img src="images/recipes/9.jpg" alt="">
+                            <div class="recipes-list__info-background">
+                                <div class="recipes-list__info">
+                                    <h3>Traditional Pizza</h3>
+                                    <div class="recipes-list__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="recipes-list__item">
+                            <img src="images/recipes/10.jpg" alt="">
+                            <div class="recipes-list__info-background">
+                                <div class="recipes-list__info">
+                                    <h3>Traditional Pizza</h3>
+                                    <div class="recipes-list__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="recipes-list__item">
+                            <img src="images/recipes/11.jpg" alt="">
+                            <div class="recipes-list__info-background">
+                                <div class="recipes-list__info">
+                                    <h3>Traditional Pizza</h3>
+                                    <div class="recipes-list__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="recipes-list__item">
+                            <img src="images/recipes/12.jpg" alt="">
+                            <div class="recipes-list__info-background">
+                                <div class="recipes-list__info">
+                                    <h3>Traditional Pizza</h3>
+                                    <div class="recipes-list__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recipes-list__pagination">
+                    <span>01</span>
+                    <a href="#">02</a>
+                    <a href="#">03</a>
+                </div>
+            </div>
+        </section>
+        <!-- Contact section end -->
+    </main>
+
+    <!-- Footer start -->
+    <footer>
+        <section class="app-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="app-footer__logo-wrapper">
+                            <img src="images/logo.svg" alt="">
+                        </div>
+                        <ul class="app-footer__social-list">
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="app-footer__right">
+                            <ul class="app-footer__menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#" class="active">Recipes</a></li>
+                                <li><a href="recipe-detail.html">Recipe Detail</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                            <p>Copyright © 2020 All rights reserved | This template is made with <i
+                                    class="far fa-heart"></i> by <a href="#">Colorlib</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Scroll-to-top button start -->
+    <div class="scroll-to-top">
+        <button onclick="scrollToTop()" id="scroll-btn" class="scroll-to-top__button">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+    <!-- Scroll-to-top button end -->
+
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

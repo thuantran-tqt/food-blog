@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Food Blog</title>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/4a9d18e4fd.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- CSS Stylesheets  -->
+    <link rel="stylesheet" href="css/recipes.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/recipe-detail.css">
+
+</head>
+
+<body>
+    <!-- Header section start -->
+    <header>
+        <!-- Top-bar section start -->
+        <section class="top-bar" id="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <ul class="top-bar__social-list">
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="top-bar__links">
+                            <a href="#">Register</a>
+                            <span>/</span>
+                            <a href="#">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Top-bar section end -->
+
+        <!-- Navigation section start -->
+        <nav class="top-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-lg-2 col-md-2">
+                        <a href="index.html" class="top-nav___link-logo">
+                            <img class="top-nav__logo" src="./images/logo.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-8 col-md-9">
+                        <ul class="top-nav__menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="recipes.html">Recipes</a></li>
+                            <li><a href="#" class="active">Recipe Detail</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-2 col-lg-2 col-md-1">
+                        <div class="top-nav__search">
+                            <button>
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="top-nav__toggle" id="showMenu">
+                            <div class="top-nav__toggle-bars">
+                                <div class="top-nav__toggle-bar" id="rotateBar-1"></div>
+                                <div class="top-nav__toggle-bar" id="hideBar"></div>
+                                <div class="top-nav__toggle-bar" id="rotateBar-2"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="top-nav__menu-toggle" id="toggleMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="#" class="active">Recipe Detail</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation section end -->
+    </header>
+    <main>
+        <!-- Hero section start -->
+        <section class="hero">
+            <div class="container"></div>
+        </section>
+        <!-- Hero section end -->
+
+        <!-- Recipe-detail section start -->
+        <section class="recipe-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="recipe-detail__heading">Lamb Chops with green peper sauce</h1>
+                        <p class="recipe-detail__date">May 15, 2018</p>
+                        <ul class="recipe-detail__rating">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-5">
+                        <div class="recipe-detail__box">
+                            <div class="recipe-detail__summary">
+                                <p>Prep: 15 mins</p>
+                                <p>Cook: 30 mins</p>
+                                <p>Yields: 8 Servings</p>
+                            </div>
+                            <h2 class="recipe-detail__title">Ingredients</h2>
+                            <div class="recipe-detail__check-box">
+                                <ul class="recipe-detail__check-box-list">
+
+                                    <li class="recipe-detail__check-box-item">
+                                        <input type="checkbox" name="checkbox" id="box-1">
+                                        <label for="box-1" class="square">4 Tbsp (57 gr) butter</label>
+                                    </li>
+
+                                    <li class="recipe-detail__check-box-item">
+                                        <input type="checkbox" name="checkbox" id="box-2">
+                                        <label for="box-2" class="square">2 large eggs</label>
+                                    </li>
+
+                                    <li class="recipe-detail__check-box-item">
+                                        <input type="checkbox" name="checkbox" id="box-3">
+                                        <label for="box-3" class="square">2 yogurt containers granulated sugar</label>
+                                    </li>
+
+                                    <li class="recipe-detail__check-box-item">
+                                        <input type="checkbox" name="checkbox" id="box-4">
+                                        <label for="box-4" class="square">1 vanilla or plain yogurt, 170g
+                                            container</label>
+                                    </li>
+
+                                    <li class="recipe-detail__check-box-item">
+                                        <input type="checkbox" name="checkbox" id="box-5">
+                                        <label for="box-5" class="square">White flour</label>
+                                    </li>
+
+                                    <li class="recipe-detail__check-box-item">
+                                        <input type="checkbox" name="checkbox" id="box-6">
+                                        <label for="box-6" class="square">1.5 yogurt containers milk</label>
+                                    </li>
+
+                                    <li class="recipe-detail__check-box-item">
+                                        <input type="checkbox" name="checkbox" id="box-7">
+                                        <label for="box-7" class="square">1/4 tsp cinnamon</label>
+                                    </li>
+
+                                    <li class="recipe-detail__check-box-item">
+                                        <input type="checkbox" name="checkbox" id="box-8">
+                                        <label for="box-8" class="square">1 cup fresh blueberries </label>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-7">
+                        <ul class="recipe-detail__content">
+                            <li>
+                                <div class="recipe-detail__item">
+                                    <h2 class="recipe-detail__number">01.</h2>
+                                    <p class="recipe-detail__description">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac
+                                        pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim.
+                                        Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque
+                                        penatibus et magni.</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="recipe-detail__item">
+                                    <h2 class="recipe-detail__number">02.</h2>
+                                    <p class="recipe-detail__description">Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Enim consectetur commodi blanditiis iure expedita nisi illo
+                                        error inventore, voluptatem fugiat iste molestiae facere voluptatibus laborum
+                                        officia quisquam odit laboriosam libero?</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="recipe-detail__item">
+                                    <h2 class="recipe-detail__number">03.</h2>
+                                    <p class="recipe-detail__description">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Commodi accusamus dolore, et blanditiis sapiente aspernatur
+                                        cupiditate ratione est vitae unde..</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="recipe-detail__item">
+                                    <h2 class="recipe-detail__number">04.</h2>
+                                    <p class="recipe-detail__description">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Repellat officia dolorum ducimus molestiae saepe tenetur
+                                        dolorem esse earum veritatis nam
+                                    <p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="recipe-detail__item">
+                                    <h2 class="recipe-detail__number">05.</h2>
+                                    <p class="recipe-detail__description">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac
+                                        pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim.
+                                        Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque
+                                        penatibus et magni.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Recipe-detail section end -->
+
+    </main>
+
+    <!-- Footer start -->
+    <footer>
+        <section class="app-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="app-footer__logo-wrapper">
+                            <img src="images/logo.svg" alt="">
+                        </div>
+                        <ul class="app-footer__social-list">
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="app-footer__right">
+                            <ul class="app-footer__menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="recipes.html">Recipes</a></li>
+                                <li><a href="recipe-detail.html" class="active">Recipe Detail</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                            <p>Copyright © 2020 All rights reserved | This template is made with <i
+                                    class="far fa-heart"></i> by <a href="#">Colorlib</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Scroll-to-top button start -->
+    <div class="scroll-to-top">
+        <button onclick="scrollToTop()" id="scroll-btn" class="scroll-to-top__button">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+    <!-- Scroll-to-top button end -->
+
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

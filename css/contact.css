@@ -1,0 +1,103 @@
+/* CONTACT PAGE */
+.contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.contact__form input,
+.contact__form textarea {
+    border: none;
+    padding: 0 30px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 50px;
+
+    background-color: #eff3f7;
+
+    font-size: 14px;
+    font-style: italic;
+    font-family: inherit;
+}
+/* Contact Form */
+h2.contact__title {
+    margin-bottom: 70px;
+    font-weight: 600;
+}
+
+textarea.contact__form-message {
+    padding: 30px;
+    height: 200px;
+    resize: vertical;
+}
+
+button.contact__form-btn {
+    border: none;
+    padding: 18px 60px;
+    color: #fff;
+    background-color: #ff2a6b;
+    font-size: 14px;
+    font-family: inherit;
+
+    cursor: pointer;
+}
+
+/* Contact Info */
+.contact__logo {
+    margin-bottom: 30px;
+}
+
+.contact__info {
+    padding-left: 100px;
+}
+
+ul.contact__info-list > li {
+    margin-bottom: 20px;
+}
+ul.contact__info-list h3 {
+    display: inline-block;
+    border-bottom: 1px solid #ff2a6b;
+    margin-bottom: 5px;
+    color: #ff2a6b;
+    font-weight: 500;
+    font-size: 16px;
+}
+ul.contact__info-list p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+ul.contact__info-social {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.contact__info-social a {
+    color: #474747;
+}
+
+/* RESPONSIVE */
+/* Tablet width */
+@media (max-width: 991px) {
+    .contact__info {
+        padding: 0;
+    }
+
+    .contact__logo {
+        padding-top: 50px;
+    }
+
+    ul.contact__info-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    ul.contact__info-social {
+        justify-content: flex-start;
+    }
+
+    ul.contact__info-social > li {
+        padding-right: 30px;
+    }
+}

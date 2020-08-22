@@ -1,0 +1,138 @@
+/* SECTION HERO */
+.hero {
+    background-image: url(../images/page-top-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.hero > .container {
+    text-align: center;
+}
+.hero > .container > .hero__title {
+    display: inline-block;
+    background-color: #ff2a6b;
+    border-radius: 5px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    color: #fff;
+    font-size: 72px;
+    font-weight: bold;
+
+    box-shadow: 0px 90px 100px rgba(0, 0, 0, 0.4);
+
+    animation: zoomIn 0.75s linear both;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+/* SECTION ABOUT */
+.about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about [class*="col"] {
+    padding: 15px;
+}
+
+.about__content {
+    padding-right: 20px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .about__content {
+        padding-bottom: 30px;
+    }
+}
+.about__title {
+    margin-bottom: 65px;
+    color: #474747;
+    font-size: 36px;
+    font-weight: 600;
+}
+.about__description {
+    color: #838383;
+    line-height: 2.1;
+    font-size: 14.1px;
+}
+.about__content > .about__link {
+    padding-top: 70px;
+}
+.about__content > .about__link > a {
+    padding: 18px 40px;
+    background-color: #ff2a6b;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.about__thumbnail {
+    max-width: 100%;
+}
+
+/* SECTION FACTS */
+.facts {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #eff3f7;
+}
+.facts > .container > ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-around; */
+}
+.facts > .container > ul li {
+    width: 100%;
+}
+
+.fact-item {
+    padding-bottom: 30px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .facts > .container > ul li {
+        width: 50%;
+        padding-bottom: 50px;
+    }
+}
+
+/* Laptop*/
+@media (min-width: 992px) {
+    .facts > .container > ul li {
+        width: 25%;
+    }
+}
+
+.fact-item {
+    text-align: center;
+}
+.fact-item > .fact-item__image {
+    margin-bottom: 20px;
+}
+.fact-item > .fact-item__big-number {
+    margin-bottom: 10px;
+    color: #474747;
+    font-size: 48px;
+    font-weight: 600;
+}
+.fact-item__name {
+    color: #474747;
+    font-size: 14px;
+    font-weight: 500;
+}
