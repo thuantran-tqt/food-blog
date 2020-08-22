@@ -1,6 +1,6 @@
 #   FOOD BLOG WEBSITE
 
-This is my final assignment in HTML & CSS course at Nordic Coder School 
+This is my final assignment in HTML & CSS course at Nordic Coder School.
 
 Technology used: 
 
