@@ -172,6 +172,8 @@ footer {
 
     cursor: pointer;
     transition: all 0.25s;
+
+    display: none;
 }
 
 .scroll-to-top__button:hover {
