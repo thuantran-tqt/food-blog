@@ -9,4 +9,4 @@ Technology used:
 - Responsive by Media Queries (not using Bootstrap)
 - A little JavaScript
 
-[Go to Food Blog](http://thuantran-food-blog.surge.sh)
+[Go to Food Blog](https://xstarseed.com)
