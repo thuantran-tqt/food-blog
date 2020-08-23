@@ -45,10 +45,6 @@
     padding-bottom: 100px;
 }
 
-.about [class*="col"] {
-    padding: 15px;
-}
-
 .about__content {
     padding-right: 20px;
 }
