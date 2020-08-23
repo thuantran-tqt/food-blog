@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage - Food Blog</title>
+    <title>Recipe Detail - Food Blog</title>
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/4a9d18e4fd.js" crossorigin="anonymous"></script>
@@ -120,15 +120,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h1 class="recipe-detail__heading">Lamb Chops with green peper sauce</h1>
-                        <p class="recipe-detail__date">May 15, 2018</p>
-                        <ul class="recipe-detail__rating">
-                            <li><i class="fas fa-star"></i></li>
-                            <li><i class="fas fa-star"></i></li>
-                            <li><i class="fas fa-star"></i></li>
-                            <li><i class="fas fa-star"></i></li>
-                            <li><i class="fas fa-star"></i></li>
-                        </ul>
+                        <div class="recipe-detail__header">
+                            <h1 class="recipe-detail__heading">Lamb Chops with green peper sauce</h1>
+                            <p class="recipe-detail__date">May 15, 2018</p>
+                            <ul class="recipe-detail__rating">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -141,53 +143,67 @@
                                 <p>Yields: 8 Servings</p>
                             </div>
                             <h2 class="recipe-detail__title">Ingredients</h2>
-                            <div class="recipe-detail__check-box">
+                            <form class="recipe-detail__check-box">
                                 <ul class="recipe-detail__check-box-list">
-
                                     <li class="recipe-detail__check-box-item">
-                                        <input type="checkbox" name="checkbox" id="box-1">
-                                        <label for="box-1" class="square">4 Tbsp (57 gr) butter</label>
+                                        <div class="form-group">
+                                            <input type="checkbox" name="checkbox" id="box-1">
+                                            <label for="box-1" class="square">4 Tbsp (57 gr) butter</label>
+                                        </div>
                                     </li>
 
                                     <li class="recipe-detail__check-box-item">
-                                        <input type="checkbox" name="checkbox" id="box-2">
-                                        <label for="box-2" class="square">2 large eggs</label>
+                                        <div class="form-group">
+                                            <input type="checkbox" name="checkbox" id="box-2">
+                                            <label for="box-2" class="square">2 large eggs</label>
+                                        </div>
                                     </li>
 
                                     <li class="recipe-detail__check-box-item">
-                                        <input type="checkbox" name="checkbox" id="box-3">
-                                        <label for="box-3" class="square">2 yogurt containers granulated sugar</label>
+                                        <div class="form-group">
+                                            <input type="checkbox" name="checkbox" id="box-3">
+                                            <label for="box-3" class="square">2 yogurt containers granulated
+                                                sugar</label>
+                                        </div>
                                     </li>
 
                                     <li class="recipe-detail__check-box-item">
-                                        <input type="checkbox" name="checkbox" id="box-4">
-                                        <label for="box-4" class="square">1 vanilla or plain yogurt, 170g
-                                            container</label>
+                                        <div class="form-group">
+                                            <input type="checkbox" name="checkbox" id="box-4">
+                                            <label for="box-4" class="square">1 vanilla or plain yogurt, 170g
+                                                container</label>
+                                        </div>
                                     </li>
 
                                     <li class="recipe-detail__check-box-item">
-                                        <input type="checkbox" name="checkbox" id="box-5">
-                                        <label for="box-5" class="square">White flour</label>
+                                        <div class="form-group">
+                                            <input type="checkbox" name="checkbox" id="box-5">
+                                            <label for="box-5" class="square">White flour</label>
+                                        </div>
                                     </li>
 
                                     <li class="recipe-detail__check-box-item">
-                                        <input type="checkbox" name="checkbox" id="box-6">
-                                        <label for="box-6" class="square">1.5 yogurt containers milk</label>
+                                        <div class="form-group">
+                                            <input type="checkbox" name="checkbox" id="box-6">
+                                            <label for="box-6" class="square">1.5 yogurt containers milk</label>
+                                        </div>
                                     </li>
 
                                     <li class="recipe-detail__check-box-item">
-                                        <input type="checkbox" name="checkbox" id="box-7">
-                                        <label for="box-7" class="square">1/4 tsp cinnamon</label>
+                                        <div class="form-group">
+                                            <input type="checkbox" name="checkbox" id="box-7">
+                                            <label for="box-7" class="square">1/4 tsp cinnamon</label>
+                                        </div>
                                     </li>
 
                                     <li class="recipe-detail__check-box-item">
-                                        <input type="checkbox" name="checkbox" id="box-8">
-                                        <label for="box-8" class="square">1 cup fresh blueberries </label>
+                                        <div class="form-group">
+                                            <input type="checkbox" name="checkbox" id="box-8">
+                                            <label for="box-8" class="square">1 cup fresh blueberries </label>
+                                        </div>
                                     </li>
-
-
                                 </ul>
-                            </div>
+                            </form>
                         </div>
                     </div>
 
@@ -200,7 +216,8 @@
                                         adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac
                                         pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim.
                                         Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque
-                                        penatibus et magni.</p>
+                                        penatibus et magni.
+                                    </p>
                                 </div>
                             </li>
 
@@ -210,7 +227,8 @@
                                     <p class="recipe-detail__description">Lorem, ipsum dolor sit amet consectetur
                                         adipisicing elit. Enim consectetur commodi blanditiis iure expedita nisi illo
                                         error inventore, voluptatem fugiat iste molestiae facere voluptatibus laborum
-                                        officia quisquam odit laboriosam libero?</p>
+                                        officia quisquam odit laboriosam libero?
+                                    </p>
                                 </div>
                             </li>
 
@@ -219,7 +237,8 @@
                                     <h2 class="recipe-detail__number">03.</h2>
                                     <p class="recipe-detail__description">Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Commodi accusamus dolore, et blanditiis sapiente aspernatur
-                                        cupiditate ratione est vitae unde..</p>
+                                        cupiditate ratione est vitae unde..
+                                    </p>
                                 </div>
                             </li>
 
@@ -229,7 +248,7 @@
                                     <p class="recipe-detail__description">Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Repellat officia dolorum ducimus molestiae saepe tenetur
                                         dolorem esse earum veritatis nam
-                                    <p>
+                                    </p>
                                 </div>
                             </li>
 
@@ -240,7 +259,8 @@
                                         adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac
                                         pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim.
                                         Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque
-                                        penatibus et magni.</p>
+                                        penatibus et magni.
+                                    </p>
                                 </div>
                             </li>
                         </ul>
