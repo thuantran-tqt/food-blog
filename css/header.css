@@ -1,17 +1,14 @@
-/* SECTION TOP-BAR */
+/**************** SECTION TOP-BAR ***************/
+
 .top-bar {
-    background-color: #ff2a6b;
     padding-top: 18px;
     padding-bottom: 18px;
+    background-color: #ff2a6b;
 }
-.top-bar > .container > .row {
-    display: flex;
-    justify-content: space-between;
-}
-/* SOCIAL-LIST */
+
+/****** SOCIAL-LIST ******/
+
 ul.top-bar__social-list {
-    display: flex;
-    flex-flow: row nowrap;
     display: none;
 }
 
@@ -19,17 +16,21 @@ ul.top-bar__social-list {
 @media only screen and (min-width: 768px) {
     ul.top-bar__social-list {
         display: flex;
+        flex-flow: row nowrap;
     }
 }
+
 ul.top-bar__social-list > li {
     padding-right: 40px;
 }
+
 ul.top-bar__social-list a {
     color: #fff;
     font-size: 15px;
 }
 
-/* LINKS */
+/******** LINKS *********/
+
 .top-bar__links {
     text-align: center;
 }
@@ -40,36 +41,28 @@ ul.top-bar__social-list a {
         text-align: right;
     }
 }
-.top-bar__links > a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-}
+
+.top-bar__links > a,
 .top-bar__links > span {
     color: #fff;
     font-weight: 600;
 }
 
-/* SECTION TOP-NAV */
+/****************** SECTION TOP-NAV *******************/
+
 .top-nav {
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: #fff;
 }
 
-.top-nav > .container {
+.top-nav .row {
     position: relative;
-}
-.top-nav > .container > .row {
-    position: relative;
-
-    display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
 }
 
-/* LOGO */
+/******** LOGO ********/
+
 .top-nav__logo {
     height: 36px;
 }
@@ -88,14 +81,8 @@ ul.top-bar__social-list a {
     }
 }
 
-/* MENU */
+/************ MENU ***********/
 
-/* Tablet */
-@media only screen and (min-width: 768px) {
-    .top-nav .row > div:last-child {
-        display: none;
-    }
-}
 .top-nav__toggle {
     position: relative;
     width: 40px;
@@ -109,7 +96,7 @@ ul.top-bar__social-list a {
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
-    .top-nav .row > .col-3 {
+    .top-nav .row > div:nth-child(4) {
         display: none;
     }
 }
@@ -170,25 +157,26 @@ ul.top-bar__social-list a {
     }
 }
 
-.top-nav__menu > li > a {
+.top-nav__menu a {
     color: #474747;
-    text-decoration: none;
     font-size: 15px;
     font-weight: 500;
 }
-.top-nav__menu > li a:hover {
-    color: #ff2a6b;
-}
+
+.top-nav__menu > li a:hover,
 .top-nav__menu > li .active {
     color: #ff2a6b;
+}
+
+.top-nav__menu > li .active {
     font-weight: 700;
 }
 
-/* SEARCH */
+/******* SEARCH BUTTON  ********/
+
 .top-nav__search {
-    /* padding-top: 15px; */
-    text-align: right;
     margin-right: -15px;
+    text-align: right;
 }
 
 /* Tablet */
@@ -205,6 +193,7 @@ ul.top-bar__social-list a {
         padding-top: 12px;
     }
 }
+
 .top-nav__search > button {
     border-radius: 4px;
     border: none;
@@ -218,54 +207,41 @@ ul.top-bar__social-list a {
     font-size: 16px;
 }
 
-/* MENU TOGGLE */
-
-.top-nav__menu-toggle {
-    position: absolute;
-    left: 0;
-    top: 135%;
-    z-index: 100;
-
-    width: 100%;
-
-    background-color: #fff;
-    text-align: left;
-    display: none;
-
-    /* transition: all 0.5s; */
-}
-
-/* .top-nav__menu-toggle::after {
-    content: "";
-    position: absolute;
-    top: -60px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    z-index: -1;
-} */
-
-.top-nav__menu-toggle.show-menu {
-    display: block;
-
-    animation: changeHeight 0.5s linear both;
-}
+/********** MENU TOGGLE **********/
 
 .top-nav__toggle-bar.hide-bar {
     visibility: hidden;
 }
 
-.top-nav__toggle-bar.rotate-bar-1 {
+.top-nav__toggle-bar.rotate-bar-1,
+.top-nav__toggle-bar.rotate-bar-2 {
     width: 30px;
-    transform: rotate(45deg) translate(6px, 6px);
     transition: all 0.5s;
 }
 
+.top-nav__toggle-bar.rotate-bar-1 {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
 .top-nav__toggle-bar.rotate-bar-2 {
-    width: 30px;
     transform: rotate(-45deg) translate(5px, -5px);
-    transition: all 0.5s;
+}
+
+ul.top-nav__menu-toggle {
+    position: absolute;
+    left: 0;
+    top: 135%;
+    z-index: 100;
+
+    display: none;
+    width: 100%;
+    background-color: #fff;
+}
+
+ul.top-nav__menu-toggle.show-menu {
+    display: block;
+
+    animation: changeHeight 0.5s linear both;
 }
 
 @keyframes changeHeight {
@@ -274,7 +250,7 @@ ul.top-bar__social-list a {
     }
 
     to {
-        height: 260px;
+        height: 250px;
     }
 }
 
@@ -315,7 +291,7 @@ ul.top-nav__menu-toggle > li:last-child {
     }
 }
 
-ul.top-nav__menu-toggle > li > a {
+ul.top-nav__menu-toggle a {
     font-size: 15px;
     font-weight: 500;
     color: #474747;
