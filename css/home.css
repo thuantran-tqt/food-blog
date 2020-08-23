@@ -1,4 +1,4 @@
-/* Homepage *
+/*********************** Homepage **********************/
 
 /* Hero Section */
 .hero {
@@ -111,8 +111,10 @@
     }
 }
 
-/* Recipes-rating section start */
-/* Top rated recipes column */
+/********** Recipes-rating section start **********/
+
+/***** Top rated recipes column, Most liked recipes *****/
+
 .recipes-rating {
     background-color: #f4f7fb;
     padding-top: 100px;
@@ -128,7 +130,6 @@ h2.recipes-rating__title {
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 700;
-    color: #474747;
 }
 
 h2.recipes-rating__title::before {
@@ -137,6 +138,7 @@ h2.recipes-rating__title::before {
     top: -15px;
     width: 50px;
     height: 6px;
+
     margin-bottom: 10px;
     background-color: #ff2a6b;
 }
@@ -161,16 +163,12 @@ ul.recipes-rating__liked > li {
     padding-bottom: 15px;
 }
 
-ul.recipes-rating__top h3,
-ul.recipes-rating__liked h3 {
-    color: #474747;
-    font-weight: 500;
-}
 .recipes-rating__list-items {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
 }
+
 .recipes-rating__image {
 }
 
@@ -178,16 +176,19 @@ ul.recipes-rating__liked h3 {
     width: 80px;
     height: 80px;
 }
+
 .recipes-rating__info {
     padding-left: 15px;
 }
+
 .recipes-rating__date {
     font-size: 12px;
     font-weight: 500;
     color: #ff2a6b;
 }
+
 .recipes-rating__name {
-    font-size: 16px;
+    color: #474747;
 }
 
 ul.recipes-rating__stars {
@@ -201,29 +202,23 @@ ul.recipes-rating__stars > li {
 }
 
 .recipes-rating__stars i {
-    font-size: 11px;
     color: #fbb710;
+    font-size: 11px;
 }
 
 .recipes-rating__stars > li:last-child i {
     color: #e0e3e4;
 }
 
-/* .recipes-rating__stars i:last-child {
-    color: #e0e3e4;
-} */
+/***** Blog recipes rating *****/
 
-/* Most liked recipes */
-ul.recipes-rating__liked {
-}
-
-/* Blog recipes rating */
 .recipes-rating__blog {
     position: relative;
     margin-top: 30px;
     background-color: #fff;
     box-shadow: 0 17px 29px rgba(0, 0, 0, 0.15);
 }
+
 .recipes-rating__blog-image {
     position: relative;
 }
@@ -242,8 +237,8 @@ ul.recipes-rating__liked {
     align-items: center;
 
     background-color: #ff2a6b;
-    font-size: 14px;
     color: #ffffff;
+    font-size: 14px;
 }
 
 .recipes-rating__blog-image::after {
@@ -251,8 +246,8 @@ ul.recipes-rating__liked {
     position: absolute;
     left: 140px;
     top: 0;
-
     width: 0;
+
     border-width: 25px 15px;
     border-style: solid;
     border-color: #ff2a6b transparent transparent #ff2a6b;
@@ -261,35 +256,39 @@ ul.recipes-rating__liked {
 .recipes-rating__blog-image img {
     width: 100%;
 }
+
 .recipes-rating__content {
-    padding: 40px 40px;
+    padding: 40px;
 }
+
 .recipes-rating__heading {
-    font-weight: 500;
-    font-size: 18px;
     color: #474747;
+    font-size: 18px;
 }
+
 .recipes-rating__author {
     padding-top: 10px;
     padding-bottom: 25px;
-    font-size: 14px;
     font-weight: 500;
     color: #ff2a6b;
 }
+
 .recipes-rating__description {
-    font-size: 14px;
     line-height: 2;
-    color: #838383;
 }
+
 .recipes-rating__comments {
     padding-top: 20px;
-    font-size: 12px;
     color: #474747;
+    font-size: 12px;
 }
+
 .recipes-rating__icon {
     position: absolute;
     right: 0;
     bottom: 0;
+    width: 40px;
+    height: 40px;
 
     display: flex;
     flex-flow: row nowrap;
@@ -297,8 +296,6 @@ ul.recipes-rating__liked {
     align-items: center;
 
     background-color: #ff2a6b;
-    width: 40px;
-    height: 40px;
 }
 
 .recipes-rating__icon i {
@@ -306,44 +303,30 @@ ul.recipes-rating__liked {
     color: #fff;
 }
 
-/* Testimonials section start */
+/**************** Testimonials section start *************/
+
 .testimonials {
+    background-color: #fdc856;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: #fdc856;
-}
-
-.testimonials .container {
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
-    .testimonials .container {
+    .testimonials > .container {
         max-width: 480px;
     }
 }
 
 /* Laptop */
 @media only screen and (min-width: 992px) {
-    .testimonials .container {
+    .testimonials > .container {
         max-width: 1150px;
     }
 }
 
-.testimonials .row {
-    /* flex-flow: row nowrap; */
-}
-
-.testimonials .col {
-    width: 100%;
+.testimonials [class^="col"] {
     padding: 15px;
-}
-
-/* Laptop */
-@media only screen and (min-width: 992px) {
-    .testimonials .col {
-        width: 50%;
-    }
 }
 
 .testimonials__bg {
@@ -351,9 +334,9 @@ ul.recipes-rating__liked {
     flex-flow: column nowrap;
     align-items: center;
 
+    background-color: #fff;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #fff;
 }
 
 /* Tablet */
@@ -363,6 +346,7 @@ ul.recipes-rating__liked {
         padding: 0;
     }
 }
+
 .testimonials__image {
     position: relative;
     width: 50%;
@@ -382,8 +366,8 @@ ul.recipes-rating__liked {
     align-items: center;
 
     background-color: #ff2a6b;
-    font-size: 12px;
     color: #ffffff;
+    font-size: 12px;
 }
 
 .testimonials__image::after {
@@ -391,14 +375,11 @@ ul.recipes-rating__liked {
     position: absolute;
     left: 90px;
     top: 0;
-
     width: 0;
+
     border-width: 18px 10px;
     border-style: solid;
     border-color: #ff2a6b transparent transparent #ff2a6b;
-}
-
-.rectangle--smallest__content {
 }
 
 .testimonials__image img {
@@ -416,6 +397,7 @@ ul.recipes-rating__liked {
     .testimonials__image {
         width: 33.333333%;
     }
+
     .testimonials__content {
         width: 66.666667%;
         padding-left: 30px;
@@ -423,7 +405,7 @@ ul.recipes-rating__liked {
     }
 }
 
-/* Tablet */
+/* Laptop */
 @media only screen and (min-width: 992px) {
     .testimonials__content {
         padding-top: 0;
@@ -435,11 +417,12 @@ ul.recipes-rating__liked {
     font-weight: 500;
     color: #ff2a6b;
 }
+
 .testimonials__title {
-    font-size: 16px;
-    font-weight: 500;
     color: #474747;
+    font-size: 16px;
 }
+
 ul.testimonials__rating {
     display: flex;
     flex-flow: row nowrap;
@@ -447,6 +430,7 @@ ul.testimonials__rating {
     padding-bottom: 15px;
 }
 
+/* Tablet */
 @media only screen and (min-width: 768px) {
     ul.testimonials__rating {
         justify-content: flex-start;
@@ -458,39 +442,35 @@ ul.testimonials__rating > li {
 }
 
 ul.testimonials__rating i {
-    font-size: 11px;
     color: #fbb710;
+    font-size: 11px;
 }
 
 ul.testimonials__rating > li:last-child i {
     color: #e0e3e4;
 }
-.testimonials__author {
-    /* display: flex;
-    flex-flow: row nowrap;
-    justify-content: center; */
-}
 
+/* Tablet */
 @media only screen and (min-width: 768px) {
     .testimonials__author {
         display: flex;
         flex-flow: row nowrap;
     }
 }
+
 .testimonials__avatar {
     width: 20%;
     border-radius: 50%;
 }
 
+/* Tablet */
 @media only screen and (min-width: 768px) {
     .testimonials__avatar {
         width: 10%;
     }
 }
+
 .testimonials__name {
     align-self: center;
     padding-left: 15px;
-    /* width: 90%; */
-    font-size: 14px;
-    color: #838383;
 }
