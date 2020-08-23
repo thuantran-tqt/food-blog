@@ -1,4 +1,5 @@
-/* SECTION HERO */
+/***************** SECTION HERO *********************/
+
 .hero {
     background-image: url(../images/recipes/single-big.jpg);
     background-size: cover;
@@ -7,22 +8,22 @@
     height: 767px;
 }
 
-/* Recipe detail box */
+/********** Recipe detail section ***********/
 .recipe-detail {
     padding-top: 100px;
     padding-bottom: 20px;
 }
 
-.recipe-detail .row {
+.recipe-detail__header {
     padding-bottom: 50px;
 }
 
 .recipe-detail__heading {
     position: relative;
 
+    color: #474747;
     font-size: 36px;
     font-weight: 600;
-    color: #474747;
 }
 
 .recipe-detail__heading::before {
@@ -35,9 +36,9 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-
     width: 150px;
     height: 50px;
+
     background-color: #ff2a6b;
 
     font-size: 16px;
@@ -58,7 +59,6 @@
 }
 
 .recipe-detail__date {
-    font-size: 14px;
     color: #a4a4a4;
 }
 
@@ -73,7 +73,6 @@ ul.recipe-detail__rating > li {
 }
 
 ul.recipe-detail__rating i {
-    font-size: 14px;
     color: #fbb710;
 }
 
@@ -89,9 +88,6 @@ ul.recipe-detail__rating > li:last-child i {
 
 .recipe-detail__title {
     padding-top: 120px;
-    font-size: 35px;
-    font-weight: 600;
-    color: #474747;
 }
 
 .recipe-detail__summary {
@@ -101,10 +97,11 @@ ul.recipe-detail__rating > li:last-child i {
 
     padding: 20px 118px 20px 50px;
     background-color: #ff2a6b;
+    color: #fff;
+
     font-size: 15px;
     font-weight: normal;
     line-height: 2;
-    color: #fff;
 }
 
 /* Tablet */
@@ -126,8 +123,8 @@ ul.recipe-detail__rating > li:last-child i {
     position: absolute;
     right: -58px;
     top: 0;
-
     width: 0;
+
     border-width: 62px 29px;
     border-style: solid;
     border-color: #ff2a6b transparent transparent #ff2a6b;
@@ -137,24 +134,24 @@ ul.recipe-detail__rating > li:last-child i {
     color: #ffffff;
 }
 
-/* Recipe-detail check-box-list */
+/*********** Recipe-detail check-box-list **********/
 
-ul.recipe-detail__check-box-list li {
+ul.recipe-detail__check-box-list > li {
     position: relative;
     padding-top: 35px;
 }
 
-.recipe-detail__check-box-item input[type="checkbox"] {
+ul.recipe-detail__check-box-list input[type="checkbox"] {
     position: absolute;
-    visibility: hidden;
     padding: 30px;
+    visibility: hidden;
 }
 
 ul.recipe-detail__check-box-list label.square {
     display: inline-block;
     padding-left: 50px;
-    font-size: 16px;
     color: #212529;
+    font-size: 16px;
 
     cursor: pointer;
 }
@@ -163,10 +160,10 @@ ul.recipe-detail__check-box-list label.square::before {
     position: absolute;
     top: 33px;
     left: 0;
-
-    border: 1px solid #aaaaaa;
     width: 25px;
     height: 25px;
+
+    border: 1px solid #aaaaaa;
     background-color: #fff;
 
     cursor: pointer;
@@ -177,14 +174,14 @@ ul.recipe-detail__check-box-list label.square::after {
     position: absolute;
     top: 35px;
     left: 9px;
-
-    visibility: hidden;
     width: 7px;
     height: 15px;
+
     border-width: 0 2px 2px 0;
     border-style: solid;
     border-color: #fff;
 
+    visibility: hidden;
     transform: rotate(45deg);
 }
 
@@ -197,7 +194,7 @@ ul.recipe-detail__check-box-list label.square::after {
     visibility: visible;
 }
 
-/* Recipe-detail content */
+/************* Recipe-detail content *************/
 
 .recipe-detail__content {
     padding-top: 50px;
@@ -226,17 +223,8 @@ ul.recipe-detail__check-box-list label.square::after {
     flex-flow: row nowrap;
 }
 
-.recipe-detail__number {
-    display: inline-block;
-    font-size: 36px;
-    font-weight: 600;
-    color: #474747;
-}
-
 .recipe-detail__description {
     padding-top: 20px;
     padding-left: 15px;
-    font-size: 14px;
     line-height: 2;
-    color: #838383;
 }
