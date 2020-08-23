@@ -189,6 +189,7 @@ ul.recipes-rating__liked > li {
 
 .recipes-rating__name {
     color: #474747;
+    font-size: 16px;
 }
 
 ul.recipes-rating__stars {
@@ -427,6 +428,7 @@ ul.testimonials__rating {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    padding-top: 5px;
     padding-bottom: 15px;
 }
 
