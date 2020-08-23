@@ -23,9 +23,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/recipes.css">
     <link rel="stylesheet" href="css/about.css">
-    <!-- <link rel="stylesheet" href="css/home.css"> -->
     <link rel="stylesheet" href="css/contact.css">
-
 
 </head>
 
@@ -125,21 +123,33 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <h2 class="contact__title">Leave a comment</h2>
-                        <form action="" class="contact__form">
+                        <form class="contact__form">
                             <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <input required type="text" class="conatact__form-name" placeholder="Name">
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="form-group">
+                                        <input required type="text" class="conatact__form-name" placeholder="Name">
+                                    </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <input required type="email" class="contact__form-email" placeholder="E-mail">
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="form-group">
+                                        <input required type="email" class="contact__form-email" placeholder="E-mail">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12">
-                                    <input required type="text" class="contact__form-subject" placeholder="Subject">
-                                    <textarea required class="contact__form-message" name="subject" id="subject"
-                                        cols="30" rows="10" placeholder="Message"></textarea>
-                                    <button class="contact__form-btn">Send</button>
+                                    <div class="form-group">
+                                        <input type="text" class="contact__form-subject" placeholder="Subject">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <textarea required class="contact__form-message" name="subject" id="subject"
+                                            cols="30" rows="10" placeholder="Message"></textarea>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <button class="contact__form-btn">Send</button>
+                                    </div>
                                 </div>
                             </div>
                         </form>
@@ -166,13 +176,43 @@
                                     <p>yourmail@gmail.com</p>
                                 </li>
                             </ul>
+
                             <ul class="contact__info-social">
-                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-pinterest"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-dribbble"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-behance"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
