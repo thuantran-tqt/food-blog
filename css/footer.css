@@ -1,4 +1,5 @@
-/* SECTION FOOTER */
+/****************** SECTION FOOTER *****************/
+
 footer {
     background-image: url(../images/footer-bg.jpg);
     background-repeat: no-repeat;
@@ -6,6 +7,7 @@ footer {
     background-position: top center;
     text-align: center;
 }
+
 .app-footer {
     padding-top: 60px;
     padding-bottom: 50px;
@@ -18,8 +20,8 @@ footer {
     }
 }
 
-/* SOCIAL-LIST */
-.app-footer__social-list {
+/******** SOCIAL-LIST ********/
+ul.app-footer__social-list {
     margin-top: 20px;
     display: flex;
     flex-flow: row nowrap;
@@ -28,39 +30,41 @@ footer {
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
-    .app-footer__social-list {
+    ul.app-footer__social-list {
         justify-content: flex-start;
     }
 }
 
-.app-footer__social-list > li {
+ul.app-footer__social-list > li {
     padding-left: 15px;
     padding-right: 15px;
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
-    .app-footer__social-list > li {
+    ul.app-footer__social-list > li {
         padding-right: 30px;
         padding-left: 0;
     }
 }
 
-.app-footer__social-list > li > a {
+ul.app-footer__social-list a {
     color: #000;
-    font-size: 14px;
 }
 
+/* Tablet */
 @media only screen and (min-width: 768px) {
-    .app-footer__social-list > li > a {
+    ul.app-footer__social-list a {
         color: #b8b8b8;
     }
 }
-.app-footer__social-list > li > a:hover {
+
+ul.app-footer__social-list > li > a:hover {
     color: #ff2a6b;
 }
 
-/* MENU */
+/*********** MENU ***********/
+
 .app-footer__right {
     margin-top: 12px;
     padding-left: 15px;
@@ -80,6 +84,7 @@ footer {
         text-align: right;
     }
 }
+
 .app-footer__menu {
     display: flex;
     flex-flow: row wrap;
@@ -98,11 +103,12 @@ footer {
 /* Laptop */
 @media only screen and (min-width: 992px) {
     .app-footer__menu {
+        flex-flow: row nowrap;
         justify-content: flex-end;
     }
 }
 
-.app-footer__menu li {
+.app-footer__menu > li {
     padding: 0 15px 10px 15px;
 }
 
@@ -115,48 +121,49 @@ footer {
 }
 /* Laptop */
 @media only screen and (min-width: 992px) {
-    .app-footer__menu li {
-        padding: 0 0 10px 30px;
+    .app-footer__menu > li {
+        padding: 0 0 10px 24px;
     }
 }
-.app-footer__menu li a {
-    text-decoration: none;
+
+.app-footer__menu a {
     color: #474747;
     font-weight: 500;
     font-size: 15px;
 }
-.app-footer__menu li a:hover {
+
+.app-footer__menu > li > a:hover,
+.app-footer__menu > li > a.active {
     color: #ff2a6b;
 }
-.app-footer__menu li .active {
-    color: #ff2a6b;
+
+.app-footer__menu > li > a.active {
     font-weight: 700;
 }
-.app-footer__right p {
-    color: #838383;
-    font-size: 14px;
-}
+
 
 /* Tablet */
 @media only screen and (min-width: 992px) {
-    .app-footer__right p {
+    .app-footer__right > p {
         font-size: 13px;
     }
 }
 
-.app-footer__right p a {
+.app-footer__right > p a {
     color: #007bff;
-    text-decoration: none;
 }
-.app-footer__right p a:hover {
+
+.app-footer__right > p a:hover {
     color: #0056b3;
 }
 
-/* Scroll-to-top button */
+/********** Scroll-to-top button ************/
+
 .scroll-to-top__button {
     position: fixed;
     right: 10px;
     bottom: 10px;
+
     width: 40px;
     height: 40px;
 
@@ -172,7 +179,6 @@ footer {
 
     cursor: pointer;
     transition: all 0.25s;
-
     display: none;
 }
 
