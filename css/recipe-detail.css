@@ -124,13 +124,17 @@ ul.recipe-detail__rating > li:last-child i {
 .recipe-detail__summary::after {
     content: "";
     position: absolute;
-    right: -50px;
+    right: -58px;
     top: 0;
 
     width: 0;
-    border-width: 65px 25px;
+    border-width: 62px 29px;
     border-style: solid;
     border-color: #ff2a6b transparent transparent #ff2a6b;
+}
+
+.recipe-detail__summary p {
+    color: #ffffff;
 }
 
 /* Recipe-detail check-box-list */
@@ -149,12 +153,15 @@ ul.recipe-detail__check-box-list li {
 ul.recipe-detail__check-box-list label.square {
     display: inline-block;
     padding-left: 50px;
+    font-size: 16px;
+    color: #212529;
+
     cursor: pointer;
 }
 ul.recipe-detail__check-box-list label.square::before {
     content: "";
     position: absolute;
-    top: 35px;
+    top: 33px;
     left: 0;
 
     border: 1px solid #aaaaaa;
@@ -168,7 +175,7 @@ ul.recipe-detail__check-box-list label.square::before {
 ul.recipe-detail__check-box-list label.square::after {
     content: "";
     position: absolute;
-    top: 37px;
+    top: 35px;
     left: 9px;
 
     visibility: hidden;

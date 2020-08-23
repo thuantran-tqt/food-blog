@@ -8,31 +8,11 @@
     padding: 15px;
 }
 
-/* .recipes-list__heading {
-} */
-
-/* .recipes-list__heading .rectangle {
-    position: relative;
-    width: 50px;
-    height: 6px;
-    margin-bottom: 10px;
-    background-color: #ff2a6b;
-} */
-
-/* .recipes-list__heading .rectangle::after {
-    content: "";
-    position: absolute;
-    right: -6px;
-    width: 0;
-    border-width: 3px;
-    border-style: solid;
-    border-color: #ff2a6b transparent transparent #ff2a6b;
-} */
-
 .recipes-list__title {
     position: relative;
     margin-bottom: 30px;
     font-size: 36px;
+    font-weight: bold;
     color: #474747;
 }
 
@@ -67,7 +47,7 @@
 
 .recipes-list__info-background {
     position: absolute;
-    bottom: 7px;
+    bottom: 6px;
     width: 78%;
     background-color: #ff2a6b;
 }
@@ -78,7 +58,7 @@
     top: 0;
     right: -40px;
     width: 0;
-    border-width: 39px 20px;
+    border-width: 37px 20px;
     border-style: solid;
     border-color: #ff2a6b transparent transparent #ff2a6b;
 }
