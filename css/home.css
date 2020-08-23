@@ -71,18 +71,18 @@
 }
 
 .hero__content > h1 {
-    animation: zoomIn 0.75s ease-out both;
+    animation: rotateZoom 1s ease-out both;
 }
 
 .hero__content > h2 {
-    animation: animate 0.75s ease-out 0.5s both;
+    animation: animate 1s ease-out 0.5s both;
 }
 
 .hero__content > h3 {
-    animation: animate 0.75s ease-out 1s both;
+    animation: animate 1s ease-out 1s both;
 }
 
-@keyframes zoomIn {
+@keyframes rotateZoom {
     from {
         opacity: 0;
         transform: scale(0, 0);
