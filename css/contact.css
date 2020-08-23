@@ -1,8 +1,12 @@
-/* CONTACT PAGE */
+/****************** CONTACT PAGE ******************/
+
 .contact {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+/********** Contact Form ***********/
+
 .contact__form input,
 .contact__form textarea {
     border: none;
@@ -17,10 +21,10 @@
     font-style: italic;
     font-family: inherit;
 }
-/* Contact Form */
+
 h2.contact__title {
     margin-bottom: 70px;
-    font-weight: 600;
+    font-size: 24px;
 }
 
 textarea.contact__form-message {
@@ -40,18 +44,51 @@ button.contact__form-btn {
     cursor: pointer;
 }
 
-/* Contact Info */
+/********* Contact Info ************/
+
 .contact__logo {
     margin-bottom: 30px;
+    padding-top: 50px;
 }
 
-.contact__info {
-    padding-left: 100px;
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .contact__logo {
+        padding-top: 0;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .contact__info {
+        padding-left: 100px;
+    }
+}
+
+ul.contact__info-list {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    ul.contact__info-list {
+        flex-flow: row nowrap;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    ul.contact__info-list {
+        flex-flow: column nowrap;
+    }
 }
 
 ul.contact__info-list > li {
-    margin-bottom: 20px;
+    width: 100%;
+    padding-bottom: 20px;
 }
+
 ul.contact__info-list h3 {
     display: inline-block;
     border-bottom: 1px solid #ff2a6b;
@@ -61,43 +98,27 @@ ul.contact__info-list h3 {
     font-size: 16px;
 }
 ul.contact__info-list p {
+    color: #474747;
     font-size: 14px;
     font-weight: 500;
     line-height: 2;
 }
 
 ul.contact__info-social {
-    padding-top: 30px;
     display: flex;
-    justify-content: space-between;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    padding-top: 30px;
+}
+
+ul.contact__info-social > li {
+    padding-right: 25px;
 }
 
 ul.contact__info-social a {
     color: #474747;
 }
 
-/* RESPONSIVE */
-/* Tablet width */
-@media (max-width: 991px) {
-    .contact__info {
-        padding: 0;
-    }
-
-    .contact__logo {
-        padding-top: 50px;
-    }
-
-    ul.contact__info-list {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-    }
-
-    ul.contact__info-social {
-        justify-content: flex-start;
-    }
-
-    ul.contact__info-social > li {
-        padding-right: 30px;
-    }
+ul.contact__info-social a:hover {
+    color: #ff2a6b;
 }
