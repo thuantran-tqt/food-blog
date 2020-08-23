@@ -68,7 +68,6 @@ ul.app-footer__social-list > li > a:hover {
 .app-footer__right {
     margin-top: 12px;
     padding-left: 15px;
-    padding-right: 15px;
 }
 
 /* Tablet */
@@ -140,7 +139,6 @@ ul.app-footer__social-list > li > a:hover {
 .app-footer__menu > li > a.active {
     font-weight: 700;
 }
-
 
 /* Tablet */
 @media only screen and (min-width: 992px) {
