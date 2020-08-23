@@ -1,19 +1,18 @@
-/* RECIPES-LIST PAGE*/
+/********************* RECIPES-LIST PAGE *******************/
+
 .recipes-list {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.recipes-list [class*="col"] {
+.recipes-list [class^="col"] {
     padding: 15px;
 }
 
 .recipes-list__title {
     position: relative;
     margin-bottom: 30px;
-    font-size: 36px;
     font-weight: bold;
-    color: #474747;
 }
 
 .recipes-list__title::before {
@@ -22,6 +21,7 @@
     top: -15px;
     width: 50px;
     height: 6px;
+
     margin-bottom: 10px;
     background-color: #ff2a6b;
 }
@@ -32,6 +32,7 @@
     top: -15px;
     left: 50px;
     width: 0;
+
     border-width: 3px;
     border-style: solid;
     border-color: #ff2a6b transparent transparent #ff2a6b;
@@ -58,18 +59,13 @@
     top: 0;
     right: -40px;
     width: 0;
+
     border-width: 37px 20px;
     border-style: solid;
     border-color: #ff2a6b transparent transparent #ff2a6b;
 }
 .recipes-list__info {
     padding: 15px 25px;
-}
-
-.recipes-list__info h3 {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 500;
 }
 
 .recipes-list__rating i {
@@ -82,19 +78,20 @@
 }
 
 .recipes-list__pagination {
-    padding-top: 70px;
     display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
+    padding-top: 70px;
 }
 
 .recipes-list__pagination > * {
-    background-color: #cccccc;
     padding: 12px 15px;
     margin-right: 10px;
+    background-color: #cccccc;
     color: #fff;
     font-weight: bold;
 }
 
-.recipes-list__pagination span {
+.recipes-list__pagination > span {
     background-color: #ff2a6b;
 }
