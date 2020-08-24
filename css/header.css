@@ -240,17 +240,16 @@ ul.top-nav__menu-toggle {
 
 ul.top-nav__menu-toggle.show-menu {
     display: block;
-
     animation: changeHeight 0.5s linear both;
 }
 
 @keyframes changeHeight {
     from {
-        height: 0;
+        max-height: 0;
     }
 
     to {
-        height: 250px;
+        max-height: 250px;
     }
 }
 
