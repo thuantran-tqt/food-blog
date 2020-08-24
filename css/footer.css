@@ -121,7 +121,7 @@ ul.app-footer__social-list > li > a:hover {
 /* Laptop */
 @media only screen and (min-width: 992px) {
     .app-footer__menu > li {
-        padding: 0 0 10px 24px;
+        padding: 0 0 10px 25px;
     }
 }
 
