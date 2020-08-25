@@ -14,6 +14,9 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
 
+    <!-- AOS Animate Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- CSS Stylesheets  -->
     <link rel="stylesheet" href="css/grid/container.css">
     <link rel="stylesheet" href="css/grid/row.css">
@@ -132,12 +135,13 @@
         <!-- Recipes list section start -->
         <section class="recipes-list">
             <div class="container">
-                <div class="recipes-list__heading">
+                <div class="recipes-list__heading" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="0">
                     <h2 class="recipes-list__title">Latest recipes</h2>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-delay="200">
                         <div class="recipes-list__item">
                             <img src="images/recipes/1.jpg" alt="">
                             <div class="recipes-list__info-background">
@@ -155,7 +159,8 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-delay="400">
                         <div class="recipes-list__item">
                             <img src="images/recipes/2.jpg" alt="">
                             <div class="recipes-list__info-background">
@@ -173,7 +178,8 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-delay="600">
                         <div class="recipes-list__item">
                             <img src="images/recipes/3.jpg" alt="">
                             <div class="recipes-list__info-background">
@@ -191,7 +197,8 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-delay="100">
                         <div class="recipes-list__item">
                             <img src="images/recipes/4.jpg" alt="">
                             <div class="recipes-list__info-background">
@@ -209,7 +216,8 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-delay="300">
                         <div class="recipes-list__item">
                             <img src="images/recipes/5.jpg" alt="">
                             <div class="recipes-list__info-background">
@@ -227,7 +235,8 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-delay="500">
                         <div class="recipes-list__item">
                             <img src="images/recipes/6.jpg" alt="">
                             <div class="recipes-list__info-background">
@@ -252,7 +261,8 @@
         <section class="recipes-rating">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-delay="0">
                         <div class="recipes-rating__col">
                             <h2 class="recipes-rating__title">Top rated recipes</h2>
                             <ul class="recipes-rating__top">
@@ -354,7 +364,8 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-delay="200">
                         <div class="recipes-rating__col">
                             <h2 class="recipes-rating__title">Most liked recipes</h2>
                             <ul class="recipes-rating__liked">
@@ -456,7 +467,8 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-12 col-lg-4">
+                    <div class="col-12 col-md-12 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-delay="400">
                         <div class="recipes-rating__blog">
                             <div class="recipes-rating__blog-image">
                                 <img src="images/blog/1.jpg" alt="">
@@ -484,7 +496,7 @@
         <section class="testimonials">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-delay="0">
                         <div class="testimonials__bg">
                             <div class="testimonials__image">
                                 <img src="images/thumb/11.jpg" alt="">
@@ -507,7 +519,8 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-easing="ease-in-out"
+                        data-aos-delay="300">
                         <div class="testimonials__bg">
                             <div class="testimonials__image">
                                 <img src="images/thumb/12.jpg" alt="">
@@ -584,6 +597,11 @@
 
     <!-- Javascript -->
     <script src="js/main.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
