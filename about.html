@@ -14,6 +14,9 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
 
+    <!-- AOS Animate Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- CSS Stylesheets  -->
     <link rel="stylesheet" href="css/grid/container.css">
     <link rel="stylesheet" href="css/grid/row.css">
@@ -122,7 +125,7 @@
         <section class="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-delay="0">
                         <div class="about__content">
                             <h2 class="about__title">About our great team</h2>
                             <p class="about__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
@@ -137,7 +140,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-delay="0">
                         <img class="about__thumbnail" src="./images/about.jpg" alt="">
                     </div>
                 </div>
@@ -146,31 +149,34 @@
         <!-- About section end -->
 
         <!-- Facts section start -->
-        <section class="facts">
+        <section class="facts" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="0">
             <div class="container">
                 <ul class="facts__list-items">
-                    <li>
+                    <li data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="0">
                         <div class="fact-item">
                             <img class="fact-item__image" src="./images/icon/1.png" alt="">
                             <h2 class="fact-item__big-number">1287</h2>
                             <p class="fact-item__name">Amazing Receipies</p>
                         </div>
                     </li>
-                    <li>
+
+                    <li data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="150">
                         <div class="fact-item">
                             <img class="fact-item__image" src="./images/icon/2.png" alt="">
                             <h2 class="fact-item__big-number">25</h2>
                             <p class="fact-item__name">Wine pairings</p>
                         </div>
                     </li>
-                    <li>
+
+                    <li data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300">
                         <div class="fact-item">
                             <img class="fact-item__image" src="./images/icon/3.png" alt="">
                             <h2 class="fact-item__big-number">471</h2>
                             <p class="fact-item__name">Meat Receipies</p>
                         </div>
                     </li>
-                    <li>
+
+                    <li data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="450">
                         <div class="fact-item">
                             <img class="fact-item__image" src="./images/icon/4.png" alt="">
                             <h2 class="fact-item__big-number">326</h2>
@@ -231,6 +237,11 @@
 
     <!-- Javascript -->
     <script src="js/main.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

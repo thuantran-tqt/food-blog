@@ -14,6 +14,9 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
 
+    <!-- AOS Animate Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- CSS Stylesheets  -->
     <link rel="stylesheet" href="css/grid/container.css">
     <link rel="stylesheet" href="css/grid/row.css">
@@ -110,7 +113,6 @@
     <main>
         <!-- Hero section start -->
         <section class="hero">
-            <div class="container"></div>
         </section>
         <!-- Hero section end -->
 
@@ -119,7 +121,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="recipe-detail__header">
+                        <div class="recipe-detail__header" data-aos="fade-up" data-aos-easing="ease-in-out"
+                            data-aos-delay="0">
                             <h1 class="recipe-detail__heading">Lamb Chops with green peper sauce</h1>
                             <p class="recipe-detail__date">May 15, 2018</p>
                             <ul class="recipe-detail__rating">
@@ -134,7 +137,8 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-12 col-lg-5">
+                    <div class="col-12 col-lg-5" data-aos="fade-right" data-aos-easing="ease-in-out"
+                        data-aos-delay="200">
                         <div class="recipe-detail__box">
                             <div class="recipe-detail__summary">
                                 <p>Prep: 15 mins</p>
@@ -208,7 +212,7 @@
 
                     <div class="col-12 col-lg-7">
                         <ul class="recipe-detail__content">
-                            <li>
+                            <li data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-delay="200">
                                 <div class="recipe-detail__item">
                                     <h2 class="recipe-detail__number">01.</h2>
                                     <p class="recipe-detail__description">Lorem ipsum dolor sit amet, consectetur
@@ -220,7 +224,7 @@
                                 </div>
                             </li>
 
-                            <li>
+                            <li data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-delay="250">
                                 <div class="recipe-detail__item">
                                     <h2 class="recipe-detail__number">02.</h2>
                                     <p class="recipe-detail__description">Lorem, ipsum dolor sit amet consectetur
@@ -231,7 +235,7 @@
                                 </div>
                             </li>
 
-                            <li>
+                            <li data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-delay="300">
                                 <div class="recipe-detail__item">
                                     <h2 class="recipe-detail__number">03.</h2>
                                     <p class="recipe-detail__description">Lorem ipsum dolor sit amet consectetur
@@ -241,7 +245,7 @@
                                 </div>
                             </li>
 
-                            <li>
+                            <li data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-delay="350">
                                 <div class="recipe-detail__item">
                                     <h2 class="recipe-detail__number">04.</h2>
                                     <p class="recipe-detail__description">Lorem ipsum dolor sit amet consectetur
@@ -251,7 +255,7 @@
                                 </div>
                             </li>
 
-                            <li>
+                            <li data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-delay="400">
                                 <div class="recipe-detail__item">
                                     <h2 class="recipe-detail__number">05.</h2>
                                     <p class="recipe-detail__description">Lorem ipsum dolor sit amet, consectetur
@@ -319,6 +323,11 @@
 
     <!-- Javascript -->
     <script src="js/main.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -14,6 +14,9 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
 
+    <!-- AOS Animate Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- CSS Stylesheets  -->
     <link rel="stylesheet" href="css/grid/container.css">
     <link rel="stylesheet" href="css/grid/row.css">
@@ -121,7 +124,7 @@
         <section class="contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8" data-aos="zoom-in" data-aos-easing="linear" data-aos-delay="0">
                         <h2 class="contact__title">Leave a comment</h2>
                         <form class="contact__form">
                             <div class="row">
@@ -155,7 +158,7 @@
                         </form>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="zoom-in" data-aos-easing="linear" data-aos-delay="200">
                         <div class="contact__logo">
                             <img src="./images/logo.svg" alt="">
                         </div>
@@ -270,6 +273,11 @@
 
     <!-- Javascript -->
     <script src="js/main.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
