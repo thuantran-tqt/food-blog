@@ -310,7 +310,11 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            easing: 'ease-in-out',
+            duration: 600,
+            once: true
+        });
     </script>
 </body>
 

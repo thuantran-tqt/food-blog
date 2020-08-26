@@ -12,10 +12,6 @@ body {
     color: #838383;
 }
 
-body[data-aos-duration="400"] [data-aos] {
-    transition-duration: 0.6s;
-}
-
 h1 {
     font-size: 72px;
     font-weight: bold;

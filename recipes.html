@@ -159,7 +159,7 @@
         <!-- Recipes list section start -->
         <section class="recipes-list">
             <div class="container">
-                <div class="recipes-list__heading" data-aos="zoom-in-right" data-aos-easing="ease" data-aos-delay="0">
+                <div class="recipes-list__heading">
                     <h2 class="recipes-list__title">Latest recipes</h2>
                 </div>
 
@@ -393,8 +393,7 @@
                     </div>
                 </div>
 
-                <div class="recipes-list__pagination" data-aos="zoom-in" data-aos-easing="ease-in-out"
-                    data-aos-delay="200">
+                <div class="recipes-list__pagination">
                     <span>01</span>
                     <a href="#">02</a>
                     <a href="#">03</a>
@@ -455,7 +454,11 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            easing: 'ease-in-out',
+            duration: 600,
+            once: true
+        });
     </script>
 </body>
 
