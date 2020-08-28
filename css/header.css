@@ -164,11 +164,11 @@ ul.top-bar__social-list a {
 }
 
 .top-nav__menu > li a:hover,
-.top-nav__menu > li .active {
+.top-nav__menu > li.active a {
     color: #ff2a6b;
 }
 
-.top-nav__menu > li .active {
+.top-nav__menu > li.active a {
     font-weight: 700;
 }
 
@@ -297,7 +297,11 @@ ul.top-nav__menu-toggle a {
     font-weight: 500;
 }
 
-ul.top-nav__menu-toggle > li .active {
+ul.top-nav__menu-toggle > li.active a {
     color: #ff2a6b;
     font-weight: 700;
 }
+
+/* ul.top-nav__menu-toggle a:hover {
+    color: #ff2a6b;
+} */
