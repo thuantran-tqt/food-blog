@@ -291,9 +291,10 @@ ul.top-nav__menu-toggle > li:last-child {
 }
 
 ul.top-nav__menu-toggle a {
+    display: block;
+    color: #474747;
     font-size: 15px;
     font-weight: 500;
-    color: #474747;
 }
 
 ul.top-nav__menu-toggle > li .active {
