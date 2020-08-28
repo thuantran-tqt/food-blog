@@ -1,13 +1,21 @@
 /********** SECTION HERO ***********/
 
 .hero {
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     background-image: url(../images/page-top-bg.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .hero > .container {
@@ -23,11 +31,18 @@
     background-color: #ff2a6b;
     color: #fff;
 
-    font-size: 72px;
+    font-size: 36px;
     font-weight: bold;
 
     box-shadow: 0px 90px 100px rgba(0, 0, 0, 0.4);
     animation: zoomIn 0.75s linear both;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .hero__title {
+        font-size: 72px;
+    }
 }
 
 @keyframes zoomIn {

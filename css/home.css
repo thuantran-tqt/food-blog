@@ -20,7 +20,7 @@
 .hero__content h2 span,
 .hero__content h3 span {
     display: inline-block;
-    padding: 0 25px;
+    padding: 0 20px;
     margin-bottom: 15px;
     border-radius: 4px;
     color: #ffffff;
@@ -30,7 +30,7 @@
 
 .hero__content h1 span.hero__title {
     background-color: #ff2a6b;
-    font-size: 40px;
+    font-size: 36px;
 }
 
 /* Tablet */
@@ -43,9 +43,9 @@
 .hero__content h2 span.hero__sub-title {
     position: relative;
     z-index: 1;
-    background-color: #fdc856;
     padding: 0 20px;
-    font-size: 30px;
+    background-color: #fdc856;
+    font-size: 28px;
     font-weight: bold;
 }
 
