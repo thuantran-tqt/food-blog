@@ -8,19 +8,14 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-}
 
-/* Tablet */
-/* @media only screen and (min-width: 768px) {
-    .hero {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-} */
-
-.hero > .container {
     text-align: center;
+
 }
+
+/* .hero > .container {
+    text-align: center;
+} */
 
 .hero__title {
     display: inline-block;

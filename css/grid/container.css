@@ -1,10 +1,10 @@
 .container {
-    max-width: 1170px;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-/* Responsive */
+/*********** Responsive ***********/
 
 /* Small */
 @media (min-width: 576px) {

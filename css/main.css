@@ -1,4 +1,4 @@
-/* Reset CSS */
+/**************** Reset CSS *****************/
 
 * {
     padding: 0;
@@ -7,32 +7,32 @@
 }
 
 body {
+    color: #838383;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
-    color: #838383;
 }
 
 h1 {
+    color: #ffffff;
     font-size: 72px;
     font-weight: bold;
-    color: #ffffff;
 }
 
 h2 {
+    color: #474747;
     font-size: 36px;
     font-weight: 600;
-    color: #474747;
 }
 
 h3 {
+    color: #ffffff;
     font-size: 15px;
     font-weight: 500;
-    color: #ffffff;
 }
 
 p {
-    font-size: 14px;
     color: #838383;
+    font-size: 14px;
 }
 
 ul {
