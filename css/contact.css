@@ -36,8 +36,10 @@ textarea.contact__form-message {
 button.contact__form-btn {
     border: none;
     padding: 18px 60px;
+    
     color: #fff;
     background-color: #ff2a6b;
+    
     font-size: 14px;
     font-family: inherit;
 
@@ -93,6 +95,7 @@ ul.contact__info-list h3 {
     display: inline-block;
     border-bottom: 1px solid #ff2a6b;
     margin-bottom: 5px;
+    
     color: #ff2a6b;
     font-weight: 500;
     font-size: 16px;
