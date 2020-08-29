@@ -1,11 +1,12 @@
 /***************** SECTION HERO *********************/
 
 .hero {
+    height: 767px;
+
     background-image: url(../images/recipes/single-big.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    height: 767px;
 }
 
 /********** Recipe detail section ***********/
@@ -123,8 +124,8 @@ ul.recipe-detail__rating > li:last-child i {
     position: absolute;
     right: -58px;
     top: 0;
-    width: 0;
 
+    width: 0;
     border-width: 62px 29px;
     border-style: solid;
     border-color: #ff2a6b transparent transparent #ff2a6b;
@@ -160,9 +161,9 @@ ul.recipe-detail__check-box-list label.square::before {
     position: absolute;
     top: 33px;
     left: 0;
+
     width: 25px;
     height: 25px;
-
     border: 1px solid #aaaaaa;
     background-color: #fff;
 
@@ -174,9 +175,9 @@ ul.recipe-detail__check-box-list label.square::after {
     position: absolute;
     top: 35px;
     left: 9px;
+
     width: 7px;
     height: 15px;
-
     border-width: 0 2px 2px 0;
     border-style: solid;
     border-color: #fff;
@@ -186,8 +187,8 @@ ul.recipe-detail__check-box-list label.square::after {
 }
 
 .recipe-detail__check-box input[type="checkbox"]:checked + label.square::before {
-    background-color: #ff2a6b;
     border-color: transparent;
+    background-color: #ff2a6b;
 }
 
 .recipe-detail__check-box input[type="checkbox"]:checked + label.square::after {

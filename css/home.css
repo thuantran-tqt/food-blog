@@ -21,6 +21,7 @@
     padding: 0 20px;
     margin-bottom: 15px;
     border-radius: 4px;
+
     color: #ffffff;
 
     box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
@@ -42,6 +43,7 @@
     position: relative;
     z-index: 1;
     padding: 0 20px;
+
     background-color: #fdc856;
 
     font-size: 28px;
@@ -58,6 +60,7 @@
 
 .hero__content h3 span {
     background-color: #bdde64;
+
     font-size: 20px;
     font-weight: bold;
 }
@@ -115,9 +118,10 @@
 /***** Top rated recipes column, Most liked recipes *****/
 
 .recipes-rating {
-    background-color: #f4f7fb;
     padding-top: 100px;
     padding-bottom: 100px;
+
+    background-color: #f4f7fb;
 }
 
 .recipes-rating__col {
@@ -127,6 +131,7 @@
 h2.recipes-rating__title {
     position: relative;
     margin-bottom: 30px;
+
     font-size: 30px;
     font-weight: 700;
 }
@@ -135,10 +140,11 @@ h2.recipes-rating__title::before {
     content: "";
     position: absolute;
     top: -15px;
+
     width: 50px;
     height: 6px;
-
     margin-bottom: 10px;
+
     background-color: #ff2a6b;
 }
 
@@ -147,8 +153,8 @@ h2.recipes-rating__title::after {
     position: absolute;
     top: -15px;
     left: 50px;
-    width: 0;
 
+    width: 0;
     border-width: 3px;
     border-style: solid;
     border-color: #ff2a6b transparent transparent #ff2a6b;
@@ -176,6 +182,7 @@ ul.recipes-rating__liked > li {
 
 .recipes-rating__date {
     color: #ff2a6b;
+
     font-size: 12px;
     font-weight: 500;
 }
@@ -210,6 +217,7 @@ ul.recipes-rating__stars > li {
     position: relative;
     margin-top: 30px;
     background-color: #fff;
+
     box-shadow: 0 17px 29px rgba(0, 0, 0, 0.15);
 }
 
@@ -222,9 +230,9 @@ ul.recipes-rating__stars > li {
     position: absolute;
     top: 0;
     left: 0;
+
     width: 140px;
     height: 50px;
-
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -240,8 +248,8 @@ ul.recipes-rating__stars > li {
     position: absolute;
     left: 140px;
     top: 0;
-    width: 0;
 
+    width: 0;
     border-width: 25px 15px;
     border-style: solid;
     border-color: #ff2a6b transparent transparent #ff2a6b;
@@ -281,9 +289,9 @@ ul.recipes-rating__stars > li {
     position: absolute;
     right: 0;
     bottom: 0;
+
     width: 40px;
     height: 40px;
-
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -293,16 +301,16 @@ ul.recipes-rating__stars > li {
 }
 
 .recipes-rating__icon i {
-    font-size: 20px;
     color: #fff;
+    font-size: 20px;
 }
 
 /**************** Testimonials section start *************/
 
 .testimonials {
-    background-color: #fdc856;
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: #fdc856;
 }
 
 .testimonials__container {
@@ -332,10 +340,10 @@ ul.recipes-rating__stars > li {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-
-    background-color: #fff;
     padding-top: 30px;
     padding-bottom: 30px;
+
+    background-color: #fff;
 }
 
 /* Tablet */
@@ -356,9 +364,9 @@ ul.recipes-rating__stars > li {
     position: absolute;
     top: 0;
     left: 0;
+
     width: 90px;
     height: 35px;
-
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
@@ -374,8 +382,8 @@ ul.recipes-rating__stars > li {
     position: absolute;
     left: 90px;
     top: 0;
-    width: 0;
 
+    width: 0;
     border-width: 18px 10px;
     border-style: solid;
     border-color: #ff2a6b transparent transparent #ff2a6b;
@@ -412,9 +420,9 @@ ul.recipes-rating__stars > li {
 }
 
 .testimonials__date {
+    color: #ff2a6b;
     font-size: 12px;
     font-weight: 500;
-    color: #ff2a6b;
 }
 
 .testimonials__title {
