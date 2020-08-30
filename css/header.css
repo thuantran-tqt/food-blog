@@ -213,17 +213,17 @@ ul.top-bar__social-list a {
     visibility: hidden;
 }
 
-.top-nav__toggle-bar.rotate-bar-1,
-.top-nav__toggle-bar.rotate-bar-2 {
+.top-nav__toggle-bar.rotate-bar-top,
+.top-nav__toggle-bar.rotate-bar-bottom {
     width: 30px;
     transition: all .35s;
 }
 
-.top-nav__toggle-bar.rotate-bar-1 {
+.top-nav__toggle-bar.rotate-bar-top {
     transform: rotate(45deg) translate(6px, 6px);
 }
 
-.top-nav__toggle-bar.rotate-bar-2 {
+.top-nav__toggle-bar.rotate-bar-bottom {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
