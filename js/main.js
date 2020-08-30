@@ -1,16 +1,17 @@
-// Show menu toggle of Homepage
-const menu = document.querySelector('#showMenu');
-const listLink = document.querySelector('#toggleMenu');
+// Set variables for menu toggle, nav links and bars 
+const menuToggle = document.querySelector('#showMenu');
+const navLink = document.querySelector('#navLinks');
 const hideBar = document.querySelector('#hideBar');
-const rotateBar1 = document.querySelector('#rotateBar-1');
-const rotateBar2 = document.querySelector('#rotateBar-2');
+const barTop = document.querySelector('#barTop');
+const barBottom = document.querySelector('#barBottom');
 
-if (menu) {
-    menu.addEventListener('click', (e) => {
-        listLink.classList.toggle('show-menu');
+// Show menu toggle
+if (menuToggle) {
+    menuToggle.addEventListener('click', (e) => {
+        navLink.classList.toggle('show-menu');
         hideBar.classList.toggle('hide-bar');
-        rotateBar1.classList.toggle('rotate-bar-1');
-        rotateBar2.classList.toggle('rotate-bar-2');
+        barTop.classList.toggle('rotate-bar-top');
+        barBottom.classList.toggle('rotate-bar-bottom');
     });
 }
 
