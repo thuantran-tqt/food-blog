@@ -17,8 +17,8 @@ if (menuToggle) {
 }
 
 
-// Button Scroll to top
-// Set a variable for button scroll to top
+// Scroll to top button
+// Set a variable for scroll to top button
 const scrollToTop = document.querySelector('#scroll-btn');
 
 // Set up a function if the window scroll down to height 500px then show button 
@@ -49,8 +49,8 @@ const animateScroll = () => {
         window.requestAnimationFrame(animateScroll);
 
         // ScrollTo takes an x and a y coordinate.
-        // Increase the '12' value to get a smoother/slower scroll
-        window.scrollTo(0, heightScroll - heightScroll / 12);
+        // Increase the '15' value to get a smoother/slower scroll
+        window.scrollTo(0, heightScroll - heightScroll / 15);
     }
 };
 
