@@ -216,7 +216,7 @@ ul.top-bar__social-list a {
 .top-nav__toggle-bar.rotate-bar-1,
 .top-nav__toggle-bar.rotate-bar-2 {
     width: 30px;
-    transition: all 0.5s;
+    transition: all .35s;
 }
 
 .top-nav__toggle-bar.rotate-bar-1 {
