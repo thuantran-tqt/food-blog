@@ -19,7 +19,7 @@ if (menuToggle) {
 
 // Scroll to top button
 // Set a variable for scroll to top button
-const scrollToTop = document.querySelector('#scroll-btn');
+const scrollToTop = document.querySelector('#scrollButton');
 
 // Set up a function if the window scroll down to height 500px then show button 
 const showButton = () => {

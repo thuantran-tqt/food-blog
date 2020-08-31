@@ -157,7 +157,7 @@ ul.app-footer__social-list > li > a:hover {
 
 /********** Scroll-to-top button ************/
 
-button#scroll-btn {
+button#scrollButton {
     position: fixed;
     right: 10px;
     bottom: 10px;
@@ -180,6 +180,6 @@ button#scroll-btn {
     display: none;
 }
 
-button#scroll-btn:hover {
+button#scrollButton:hover {
     opacity: 0.7;
 }
