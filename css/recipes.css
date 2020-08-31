@@ -59,10 +59,10 @@
     content: "";
     position: absolute;
     top: 0;
-    right: -40px;
+    right: -36px;
 
-    width: 0;
-    border-width: 37px 20px;
+    width: 0;   
+    border-width: 37px 18px;
     border-style: solid;
     border-color: #ff2a6b transparent transparent #ff2a6b;
 }
