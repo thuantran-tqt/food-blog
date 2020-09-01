@@ -230,7 +230,7 @@ ul.top-bar__social-list a {
 ul.top-nav__menu-toggle {
     position: absolute;
     left: 0;
-    top: 135%;
+    top: 55px;
     z-index: 100;
 
     display: none;
