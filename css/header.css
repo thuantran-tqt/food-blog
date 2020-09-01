@@ -13,6 +13,7 @@ ul.top-bar__social-list {
 }
 
 /* Tablet */
+
 @media only screen and (min-width: 768px) {
     ul.top-bar__social-list {
         display: flex;
@@ -36,13 +37,14 @@ ul.top-bar__social-list a {
 }
 
 /* Tablet */
+
 @media only screen and (min-width: 768px) {
     .top-bar__links {
         text-align: right;
     }
 }
 
-.top-bar__links > a,
+.top-bar__links > a, 
 .top-bar__links > span {
     color: #fff;
     font-weight: 600;
@@ -68,6 +70,7 @@ ul.top-bar__social-list a {
 }
 
 /* Tablet */
+
 @media only screen and (min-width: 768px) {
     .top-nav__logo {
         height: 48px;
@@ -75,6 +78,7 @@ ul.top-bar__social-list a {
 }
 
 /* Laptop */
+
 @media only screen and (min-width: 992px) {
     .top-nav__logo {
         height: 64px;
@@ -90,11 +94,11 @@ ul.top-bar__social-list a {
     border: 1px solid #ddd;
     font-size: 24px;
     text-align: center;
-
     cursor: pointer;
 }
 
 /* Tablet */
+
 @media only screen and (min-width: 768px) {
     .top-nav .row > div:nth-child(4) {
         display: none;
@@ -105,7 +109,6 @@ ul.top-bar__social-list a {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-
     padding-top: 3px;
 }
 
@@ -122,6 +125,7 @@ ul.top-bar__social-list a {
 }
 
 /* Tablet */
+
 @media only screen and (min-width: 768px) {
     .top-nav__menu {
         display: flex;
@@ -131,6 +135,7 @@ ul.top-bar__social-list a {
 }
 
 /* Laptop */
+
 @media only screen and (min-width: 992px) {
     .top-nav__menu {
         padding-top: 21px;
@@ -143,6 +148,7 @@ ul.top-bar__social-list a {
 }
 
 /* Tablet */
+
 @media only screen and (min-width: 768px) {
     .top-nav__menu > li {
         padding-left: 28px;
@@ -151,6 +157,7 @@ ul.top-bar__social-list a {
 }
 
 /* Laptop */
+
 @media only screen and (min-width: 992px) {
     .top-nav__menu > li {
         padding-right: 15px;
@@ -163,7 +170,7 @@ ul.top-bar__social-list a {
     font-weight: 500;
 }
 
-.top-nav__menu > li a:hover,
+.top-nav__menu > li a:hover, 
 .top-nav__menu > li.active a {
     color: #ff2a6b;
 }
@@ -180,6 +187,7 @@ ul.top-bar__social-list a {
 }
 
 /* Tablet */
+
 @media only screen and (min-width: 768px) {
     .top-nav__search {
         margin-right: 0;
@@ -188,6 +196,7 @@ ul.top-bar__social-list a {
 }
 
 /* Laptop */
+
 @media only screen and (min-width: 992px) {
     .top-nav__search {
         padding-top: 12px;
@@ -200,9 +209,9 @@ ul.top-bar__social-list a {
     padding: 11px 8px 9px 10px;
     background-color: #ff2a6b;
     color: #fff;
-
     cursor: pointer;
 }
+
 .top-nav__search i {
     font-size: 16px;
 }
@@ -213,7 +222,7 @@ ul.top-bar__social-list a {
     visibility: hidden;
 }
 
-.top-nav__toggle-bar.rotate-bar-top,
+.top-nav__toggle-bar.rotate-bar-top, 
 .top-nav__toggle-bar.rotate-bar-bottom {
     width: 30px;
     transition: all .35s;
@@ -232,7 +241,6 @@ ul.top-nav__menu-toggle {
     left: 0;
     top: 55px;
     z-index: 100;
-
     display: none;
     width: 100%;
     background-color: #fff;
@@ -240,15 +248,14 @@ ul.top-nav__menu-toggle {
 
 ul.top-nav__menu-toggle.show-menu {
     display: block;
-    animation: changeHeight 0.5s linear both;
+    animation: changeHeight .5s linear both;
 }
 
 @keyframes changeHeight {
-    from {
+    0% {
         max-height: 0;
     }
-
-    to {
+    100% {
         max-height: 250px;
     }
 }
@@ -284,7 +291,6 @@ ul.top-nav__menu-toggle > li:last-child {
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
