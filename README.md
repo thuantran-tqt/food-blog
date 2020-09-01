@@ -2,6 +2,9 @@
 
 Food Blog is my final assignment in HTML & CSS course at [Nordic Coder School](https://nordiccoder.com/) with instruction of [Mr. Hau Nguyen](https://github.com/paulnguyen-mn)
 
+![Food Blog banner](images/food-blog-banner.png)
+*Food Blog*
+
 ## Build with 
 
 - HTML5
