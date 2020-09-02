@@ -19,7 +19,7 @@ Food Blog is my final assignment in HTML & CSS section (inside Front-end Develop
 - Use JS to smoother / slower the scrolling process for scroll-to-top button
 - Use JS to handle click toggle menu on mobile
 
-## What I learned after HTML & CSS Course
+## What I learned from Mr. Hau Nguyen after HTML & CSS Course
 
 - How to analyze layout to create HTML Tree, instead of start coding immediately ---> [Example](markdown/home-html-tree.md)
 - How to organize source code directory
