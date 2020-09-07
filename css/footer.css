@@ -162,6 +162,7 @@ button#scrollButton {
     right: 10px;
     bottom: 10px;
 
+    display: none;
     width: 40px;
     height: 40px;
     border: none;
@@ -172,7 +173,6 @@ button#scrollButton {
 
     cursor: pointer;
     transition: all 0.25s;
-    display: none;
 }
 
 button#scrollButton:hover {
