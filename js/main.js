@@ -51,9 +51,9 @@ const animateScroll = () => {
         // Increase the '15' value to get a smoother/slower scroll
         window.scrollTo(0, heightScroll - heightScroll / 15);
     }
-};
+}
 
 // When the button clicked, run animateScroll function
 scrollToTop.onclick = function () {
     animateScroll();
-};
+}
