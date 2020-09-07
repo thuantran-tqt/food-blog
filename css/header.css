@@ -241,23 +241,17 @@ ul.top-nav__menu-toggle {
     left: 0;
     top: 55px;
     z-index: 100;
-    display: none;
+
     width: 100%;
+    max-height: 0;
     background-color: #fff;
+
+    overflow: hidden;
+    transition: all 0.5s;
 }
 
 ul.top-nav__menu-toggle.show-menu {
-    display: block;
-    animation: changeHeight .5s linear both;
-}
-
-@keyframes changeHeight {
-    0% {
-        max-height: 0;
-    }
-    100% {
-        max-height: 250px;
-    }
+    max-height: 250px;
 }
 
 ul.top-nav__menu-toggle > li {
@@ -265,35 +259,6 @@ ul.top-nav__menu-toggle > li {
     padding-bottom: 10px;
     padding-left: 20px;
     border-top: 1px solid #ededed;
-}
-
-ul.top-nav__menu-toggle > li:first-child {
-    animation: delayMenu 0.2s linear both;
-}
-
-ul.top-nav__menu-toggle > li:nth-child(2) {
-    animation: delayMenu 0.2s linear 0.1s both;
-}
-
-ul.top-nav__menu-toggle > li:nth-child(3) {
-    animation: delayMenu 0.2s linear 0.2s both;
-}
-
-ul.top-nav__menu-toggle > li:nth-child(4) {
-    animation: delayMenu 0.2s linear 0.3s both;
-}
-
-ul.top-nav__menu-toggle > li:last-child {
-    animation: delayMenu 0.2s linear 0.4s both;
-}
-
-@keyframes delayMenu {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 ul.top-nav__menu-toggle a {
