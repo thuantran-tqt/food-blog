@@ -42,12 +42,12 @@ const animateScroll = () => {
     // Set a variable for the number of pixels from the top of the document.
     const heightScroll = document.documentElement.scrollTop || document.body.scrollTop;
 
-    // If that number is greater than 0, scroll to top of the document.
+    // If heightScroll value is greater than 0, scroll to top of the document.
     // Animate scroll with method requestAnimationFrame:
     if (heightScroll > 0) {
         window.requestAnimationFrame(animateScroll);
 
-        // ScrollTo takes an x and a y coordinate.
+        // ScrollTo takes x and y coordinate.
         // Increase the '15' value to get a smoother/slower scroll
         window.scrollTo(0, heightScroll - heightScroll / 15);
     }
@@ -56,4 +56,4 @@ const animateScroll = () => {
 // When the button clicked, run animateScroll function
 scrollToTop.onclick = function () {
     animateScroll();
-}
+};
