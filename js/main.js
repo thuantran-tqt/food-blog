@@ -22,22 +22,21 @@ if (menuToggle) {
 const scrollToTop = document.querySelector('#scrollButton');
 
 // Set up a function if the window scroll down to height 500px then show button 
-const showButton = () => {
+window.addEventListener("scroll", () => {
+
     // Get the current scroll height value
     const windowHeight = window.scrollY;
 
     // If the scroll height value is greater than the window height, add style inline-css in button 
     if (windowHeight > 500) {
-        scrollToTop.style.display = "block";
+        scrollToTop.style.display = 'block';
     } else {
-        scrollToTop.style.display = "none";
+        scrollToTop.style.display = 'none';
     }
-};
+});
 
-// Add event scroll
-window.addEventListener("scroll", showButton);
 
-// Setup a function with animate scroll to top slower
+// Setup a function with animate scroll to top slower / smoother
 const animateScroll = () => {
 
     // Set a variable for the number of pixels from the top of the document.
@@ -55,7 +54,6 @@ const animateScroll = () => {
 };
 
 // When the button clicked, run animateScroll function
-scrollToTop.onclick = function (e) {
-    e.preventDefault();
+scrollToTop.onclick = function () {
     animateScroll();
 }
