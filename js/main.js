@@ -1,10 +1,10 @@
 // Menu Toggle 
 // Set variables for menu toggle, nav links and bars 
-const menuToggle = document.querySelector('#showMenu');
-const navLink = document.querySelector('#navLinks');
-const hideBar = document.querySelector('#hideBar');
-const barTop = document.querySelector('#barTop');
-const barBottom = document.querySelector('#barBottom');
+const menuToggle = document.querySelector('#showMenu'),
+    navLink = document.querySelector('#navLinks'),
+    hideBar = document.querySelector('#hideBar'),
+    barTop = document.querySelector('#barTop'),
+    barBottom = document.querySelector('#barBottom');
 
 // Show menu toggle
 if (menuToggle) {
