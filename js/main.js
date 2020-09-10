@@ -1,7 +1,7 @@
 // Menu Toggle 
 // Set variables for menu toggle, nav links and bars 
 const menuToggle = document.querySelector('#showMenu'),
-    navLink = document.querySelector('#navLinks');
+    navLink = document.querySelector('#navLinks'),
     hideBar = document.querySelector('#hideBar'),
     barTop = document.querySelector('#barTop'),
     barBottom = document.querySelector('#barBottom');
