@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: xstarseed.com
+Token: 73cf7cda659f3f02ec14be7d7bb4d1649b59292e113e891d5b61530c9fdfaca7
